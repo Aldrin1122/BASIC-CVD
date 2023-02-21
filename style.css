@@ -330,7 +330,7 @@ img {
 
 .about{
   background: #ffffff;
-  padding: 3rem;
+  padding: rem;
  
 }
 
@@ -351,7 +351,7 @@ img {
 .about .about__text p{
   max-width: 75rem;
   text-align: justify;
-  margin: 3rem 0;
+  margin: rem 0;
 }
 
 .image1{
@@ -382,16 +382,62 @@ img {
       width: 20rem;
       height: auto;
       opacity: .3;
-      
+   
   }
 
   .image2{
       width: 20rem;
       height: auto;
      
+  } 
+}
+
+/*------hm-Services------*/
+
+.hm-services{
+  background: #2b2b2b;
+  padding: 8rem 0;
+}
+
+.hm-services .hm-services__item i{
+  font-size: 6rem;
+  color: #ffa700;
+  margin-bottom: 2rem;
+}
+
+.hm-services .hm-services__item h4{
+  font-size: 2.5rem;
+  color: #ffa700;
+  font-weight: 600;
+}
+
+.hm-services .hm-services__item p{
+  color: #ffffff;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.hm-services .hm-service__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hm-services .hm-services__item{
+  text-align: center;
+  margin: 0 5rem;
+}
+
+@media screen and (max-width:500px){
+  .hm-services .hm-services__item{
+    margin: 0rem 4rem;
   }
 
-  
+  .hm-services .hm-service__wrapper{
+    display: block;
+  }
+
+  .hm-services .hm-services__item:nth-child(2){
+    margin: 12rem 4rem;
 }
 
 /*------REPEATABLE PATTERNS------*/
@@ -415,6 +461,5 @@ img {
 .bg--dark{
   background: #2b2b2b;
   color: #ffffff;
+
 }
-
-
